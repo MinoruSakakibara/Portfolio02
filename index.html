@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- <link rel="stylesheet" href="css\style.css"> -->
+    <link rel=”stylesheet” href=”https://MinoruSakakibara.github.io/Portfolio02/css/style.css”/>
+    <title>フォーム練習②</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="headline">フォームの練習②</h1>
+      <ul class="header-nav-list">
+        <li class="nav-list-item">HOME</li>
+        <li class="nav-list-item">ABOUT</li>
+        <li class="nav-list-item">PRODUCT</li>
+        <li class="nav-list-item">CONTACT</li>
+      </ul>
+    </header>
+    
+    <div class="contact-form">
+      <form action="" method="post">
+        <table>
+          <tr>
+            <th>お名前</th>
+            <td> 
+              <input type="text" name="yourname">
+            </td>
+          </tr>
+          
+          <tr>
+            <th>メールアドレス</th>
+            <td>
+              <input type="email" name="yourmail">
+            </td>
+          </tr>
+
+          <tr>
+            <th>お電話番号</th>
+            <td>
+              <input type="number" name="phonenumber">
+            </td>
+          </tr>
+
+          <tr>
+            <th>お問い合わせ内容</th>
+            <td>
+              <select name="inquiry" id="inquiry">
+                <option value="select">選択してください</option>
+                <option value="service">サービスについて</option>
+                <option value="product">製品について</option>
+                <option value="other">その他</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <th>連絡可能時間帯</th>
+            <td>
+              <label><input type="radio" name="time" value="morning">9:00~12:00</label>
+              <label><input type="radio" name="time" value="afternoon">13:00~17:00</label>
+              <label><input type="radio" name="time" value="evening">17:00以降</label>
+            </td>
+          </tr>
+          
+          <tr>
+            <th>その他</th>
+            <td>
+              <textarea name="comment"></textarea>
+            </td>
+          </tr>
+        </table>
+
+        <input type="submit" value="送信する">
+
+        <input type="reset" value="リセットする">
+      </form>
+    </div>
+
+    <footer>
+      <ul class="footer-nav-list">
+        <li>HOME |</li>
+        <li>ABOUT |</li>
+        <li>PRODUCT |</li>
+        <li>CONTACT</li>
+      </ul>
+        <p>© All rights reserved by Minoru Sakakibara</p>
+    </footer>
+  </body>
+</html>
